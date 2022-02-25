@@ -26,6 +26,8 @@ With auto-generated template emails and recommended matches based on subject, gr
 
 You can access a demo of the Living Room Tutors app here: https://living-room-tutors-demo.herokuapp.com/ . However, you will need an admin username and password to access the administrative side of the app, where most of the magic happens. Please contact me if you would like a walk-through! Please view in Chrome desktop browser only--all other browsers are considered out of scope.
 
+You can also view a presentation of this application here: https://www.youtube.com/watch?v=vS6QSfql8NY 
+
 ## Screenshots
 
 <img src='/src/images/forms.gif'/>
