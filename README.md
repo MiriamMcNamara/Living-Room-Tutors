@@ -53,6 +53,8 @@ There is a database.sql file to use to set up a database. After that, once you f
 
 ## Usage
 
+You can access a demo of the Living Room Tutors app here: https://living-room-tutors-demo.herokuapp.com/ . However, you will need an admin username and password to access the administrative side of the app, where most of the magic happens. Please contact me if you would like a walk-through!
+
 ## Tutors/Tutees
 
 - Users who want to apply to be a tutor or recieve tutoring through LRT will click the corresponding button from the /home and enter all required fields on the subsequent pages.
