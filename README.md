@@ -22,7 +22,9 @@ Living Room Tutors was originally launched in 2020 by then high school student J
 
 Living Room Tutors was looking for a more efficient way to match tutors and students. To help alleviate this administrative load, we created an application and database that suggests matches based on the data submitted, sends confirmation emails and generates template emails for successful matches.
 
-With auto-generated template emails and recommended matches based on subject, grade and language, Living Room Tutors will be able to match and respond to applicants much more efficiently, and with much less room for user error. Admin will now have much more time to spend networking, getting the word out to people who could benefit from their services, and applying for grants and other resources using the well-organized data within their new application
+With auto-generated template emails and recommended matches based on subject, grade and language, Living Room Tutors will be able to match and respond to applicants much more efficiently, and with much less room for user error. Admin will now have much more time to spend networking, getting the word out to people who could benefit from their services, and applying for grants and other resources using the well-organized data within their new application.
+
+You can access a demo of the Living Room Tutors app here: https://living-room-tutors-demo.herokuapp.com/ . However, you will need an admin username and password to access the administrative side of the app, where most of the magic happens. Please contact me if you would like a walk-through! Please view in Chrome desktop browser only--all other browsers are considered out of scope.
 
 ## Screenshots
 
@@ -52,8 +54,6 @@ Express, Postgresql, Bootstrap, FontAwesome, Nodemailer, GoogleAPIs, Passport, A
 There is a database.sql file to use to set up a database. After that, once you fork and clone the repository to your local machine, you should be able to run npm install, then run the server and client to be able to use the app locally.
 
 ## Usage
-
-You can access a demo of the Living Room Tutors app here: https://living-room-tutors-demo.herokuapp.com/ . However, you will need an admin username and password to access the administrative side of the app, where most of the magic happens. Please contact me if you would like a walk-through!
 
 ## Tutors/Tutees
 
