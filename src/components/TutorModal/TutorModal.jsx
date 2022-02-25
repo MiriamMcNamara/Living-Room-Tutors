@@ -60,9 +60,15 @@ function TutorModal(props) {
           </Modal.Body>
 
           <Modal.Footer className="submissionModalFooter ">
-            <button className="primaryButton okButton" variant="primary">
-              <a href="https://livingroomtutors.org/">OK</a>
-            </button>
+            <Link to="/Home">
+              <Button
+                className="primaryButton okButton"
+                variant="primary"
+                onClick={handleClose}
+              >
+                OK
+              </Button>
+            </Link>
           </Modal.Footer>
         </Modal>
       </>
