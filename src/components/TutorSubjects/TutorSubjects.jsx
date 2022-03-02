@@ -45,8 +45,9 @@ function TutorSubjects(props) {
   const history = useHistory();
 
   const rightArrow = <FontAwesomeIcon icon={faArrowRight} />;
-  const newtutorSubj = useSelector((store) => store.newtutor.newtutorSubjectReducer);
-
+  const newtutorSubj = useSelector(
+    (store) => store.newtutor.newtutorSubjectReducer
+  );
 
   useEffect(() => {
     scrollToTop();
@@ -54,83 +55,82 @@ function TutorSubjects(props) {
   }, []);
 
   const checkReducer = (newtutorSubj) => {
-    console.log('in checkReducer', newtutorSubj);
+    console.log("in checkReducer", newtutorSubj);
     if (newtutorSubj.length == 0) {
-      console.log('EMPTY');
+      console.log("EMPTY");
       return false;
-    }
-    else {
-      setPreK(newtutorSubj.PreK)
-      setFirstGrade(newtutorSubj.FirstGrade)
-      setSecondGrade(newtutorSubj.SecondGrade)
-      setThirdGrade(newtutorSubj.ThirdGrade)
-      setFourthGrade(newtutorSubj.FourthGrade)
-      setFifthGrade(newtutorSubj.FifthGrade)
-      setSixthGrade(newtutorSubj.SixthGrade)
-      setSeventhGrade(newtutorSubj.SeventhGrade)
-      setEighthGrade(newtutorSubj.EighthGrade)
-      setNinthGrade(newtutorSubj.NinthGrade)
-      setTenthGrade(newtutorSubj.TenthGrade)
-      setEleventhGrade(newtutorSubj.EleventhGrade)
-      setTwelfthGrade(newtutorSubj.TwelfthGrade)
+    } else {
+      setPreK(newtutorSubj.PreK);
+      setFirstGrade(newtutorSubj.FirstGrade);
+      setSecondGrade(newtutorSubj.SecondGrade);
+      setThirdGrade(newtutorSubj.ThirdGrade);
+      setFourthGrade(newtutorSubj.FourthGrade);
+      setFifthGrade(newtutorSubj.FifthGrade);
+      setSixthGrade(newtutorSubj.SixthGrade);
+      setSeventhGrade(newtutorSubj.SeventhGrade);
+      setEighthGrade(newtutorSubj.EighthGrade);
+      setNinthGrade(newtutorSubj.NinthGrade);
+      setTenthGrade(newtutorSubj.TenthGrade);
+      setEleventhGrade(newtutorSubj.EleventhGrade);
+      setTwelfthGrade(newtutorSubj.TwelfthGrade);
 
-      setK5Math(newtutorSubj.K5Math)
-      setK5Reading(newtutorSubj.K5Reading)
-      setK5EnglishWriting(newtutorSubj.K5EnglishWriting)
-      setK5SocialStudies(newtutorSubj.K5SocialStudies)
-      setK5Science(newtutorSubj.K5Science)
-      setSixToEightLanguageArts(newtutorSubj.SixToEightLanguageArts)
-      setSixToEightScience(newtutorSubj.SixToEightScience)
-      setSixToEightSocialStudies(newtutorSubj.SixToEightSocialStudies)
-      setMathPreAlgebra(newtutorSubj.MathPreAlgebra)
-      setMathLinearAlgebra(newtutorSubj.MathLinearAlgebra)
-      setMathGeometry(newtutorSubj.MathGeometry)
-      setMathAlgebraII(newtutorSubj.MathAlgebraII)
-      setMathPrecalculusTrigonometry(newtutorSubj.MathPrecalculusTrigonometry)
-      setBiologyLifeSciences(newtutorSubj.BiologyLifeSciences)
-      setScienceChemistry(newtutorSubj.ScienceChemistry)
-      setSciencePhysics(newtutorSubj.SciencePhysics)
-      setComputerScience(newtutorSubj.ComputerScience)
-      setLanguageChinese(newtutorSubj.LanguageChinese)
-      setLanguageSpanish(newtutorSubj.LanguageSpanish)
-      setLanguageFrench(newtutorSubj.LanguageFrench)
-      setLanguageGerman(newtutorSubj.LanguageGerman)
-      setWorldHistory(newtutorSubj.WorldHistory)
-      setUSHistory(newtutorSubj.USHistory)
-      setAPHonorsBiology(newtutorSubj.APHonorsBiology)
-      setAPHonorsChemistry(newtutorSubj.APHonorsChemistry)
-      setAPHonorsPhysics(newtutorSubj.APHonorsPhysics)
-      setAPHonorsComputerScience(newtutorSubj.APHonorsComputerScience)
-      setAPHonorsCalculusAB(newtutorSubj.APHonorsCalculusAB)
-      setAPHonorsCalculusBC(newtutorSubj.APHonorsCalculusBC)
-      setAPHonorsStatistics(newtutorSubj.APHonorsStatistics)
-      setAPHonorsEnglishLiterature(newtutorSubj.APHonorsEnglishLiterature)
-      setAPHonorsEnglishLanguage(newtutorSubj.APHonorsEnglishLanguage)
-      setAPHonorsMacroeconomics(newtutorSubj.APHonorsMacroeconomics)
-      setAPHonorsMicroeconomics(newtutorSubj.APHonorsMicroeconomics)
-      setAPHonorsPsychology(newtutorSubj.APHonorsPsychology)
-      setAPHonorsUSHistory(newtutorSubj.APHonorsUSHistory)
-      setAPHonorsGovernmentPolitics(newtutorSubj.APHonorsGovernmentPolitics)
-      setAPHonorsHumanGeography(newtutorSubj.APHonorsHumanGeography)
-      setSATSubjectTests(newtutorSubj.SATSubjectTests)
-      setSATPrep(newtutorSubj.SATPrep)
-      setACTPrep(newtutorSubj.ACTPrep)
-      setOther(newtutorSubj.Other)
+      setK5Math(newtutorSubj.K5Math);
+      setK5Reading(newtutorSubj.K5Reading);
+      setK5EnglishWriting(newtutorSubj.K5EnglishWriting);
+      setK5SocialStudies(newtutorSubj.K5SocialStudies);
+      setK5Science(newtutorSubj.K5Science);
+      setSixToEightLanguageArts(newtutorSubj.SixToEightLanguageArts);
+      setSixToEightScience(newtutorSubj.SixToEightScience);
+      setSixToEightSocialStudies(newtutorSubj.SixToEightSocialStudies);
+      setMathPreAlgebra(newtutorSubj.MathPreAlgebra);
+      setMathLinearAlgebra(newtutorSubj.MathLinearAlgebra);
+      setMathGeometry(newtutorSubj.MathGeometry);
+      setMathAlgebraII(newtutorSubj.MathAlgebraII);
+      setMathPrecalculusTrigonometry(newtutorSubj.MathPrecalculusTrigonometry);
+      setBiologyLifeSciences(newtutorSubj.BiologyLifeSciences);
+      setScienceChemistry(newtutorSubj.ScienceChemistry);
+      setSciencePhysics(newtutorSubj.SciencePhysics);
+      setComputerScience(newtutorSubj.ComputerScience);
+      setLanguageChinese(newtutorSubj.LanguageChinese);
+      setLanguageSpanish(newtutorSubj.LanguageSpanish);
+      setLanguageFrench(newtutorSubj.LanguageFrench);
+      setLanguageGerman(newtutorSubj.LanguageGerman);
+      setWorldHistory(newtutorSubj.WorldHistory);
+      setUSHistory(newtutorSubj.USHistory);
+      setAPHonorsBiology(newtutorSubj.APHonorsBiology);
+      setAPHonorsChemistry(newtutorSubj.APHonorsChemistry);
+      setAPHonorsPhysics(newtutorSubj.APHonorsPhysics);
+      setAPHonorsComputerScience(newtutorSubj.APHonorsComputerScience);
+      setAPHonorsCalculusAB(newtutorSubj.APHonorsCalculusAB);
+      setAPHonorsCalculusBC(newtutorSubj.APHonorsCalculusBC);
+      setAPHonorsStatistics(newtutorSubj.APHonorsStatistics);
+      setAPHonorsEnglishLiterature(newtutorSubj.APHonorsEnglishLiterature);
+      setAPHonorsEnglishLanguage(newtutorSubj.APHonorsEnglishLanguage);
+      setAPHonorsMacroeconomics(newtutorSubj.APHonorsMacroeconomics);
+      setAPHonorsMicroeconomics(newtutorSubj.APHonorsMicroeconomics);
+      setAPHonorsPsychology(newtutorSubj.APHonorsPsychology);
+      setAPHonorsUSHistory(newtutorSubj.APHonorsUSHistory);
+      setAPHonorsGovernmentPolitics(newtutorSubj.APHonorsGovernmentPolitics);
+      setAPHonorsHumanGeography(newtutorSubj.APHonorsHumanGeography);
+      setSATSubjectTests(newtutorSubj.SATSubjectTests);
+      setSATPrep(newtutorSubj.SATPrep);
+      setACTPrep(newtutorSubj.ACTPrep);
+      setOther(newtutorSubj.Other);
 
-      setSpanish(newtutorSubj.Spanish)
-      setSomali(newtutorSubj.Somali)
-      setArabic(newtutorSubj.Arabic)
-      setChinese(newtutorSubj.Chinese)
-      setTagalog(newtutorSubj.Tagalog)
-      setFrench(newtutorSubj.French)
-      setVietnamese(newtutorSubj.Vietnamese)
-      setHmong(newtutorSubj.Hmong)
+      setSpanish(newtutorSubj.Spanish);
+      setSomali(newtutorSubj.Somali);
+      setArabic(newtutorSubj.Arabic);
+      setChinese(newtutorSubj.Chinese);
+      setTagalog(newtutorSubj.Tagalog);
+      setFrench(newtutorSubj.French);
+      setVietnamese(newtutorSubj.Vietnamese);
+      setHmong(newtutorSubj.Hmong);
       if (newtutorSubj.otherLanguage) {
         setIsLangChecked(true);
         setotherLanguage(newtutorSubj.otherLanguage);
       }
     }
-  }
+  };
 
   const scrollToTop = () => {
     window.scrollTo(0, 0);
@@ -210,7 +210,7 @@ function TutorSubjects(props) {
   const [Vietnamese, setVietnamese] = useState(false);
   const [Hmong, setHmong] = useState(false);
   const [IsLangChecked, setIsLangChecked] = useState(false);
-  const [otherLanguage, setotherLanguage] = useState('');
+  const [otherLanguage, setotherLanguage] = useState(null);
   // ******** LANGUAGE CHECK BOXES **************
 
   // *********** TUTOR GRADE LEVELS ****************
@@ -532,11 +532,10 @@ function TutorSubjects(props) {
     console.log("is other checked?", IsLangChecked);
 
     if (IsLangChecked == true) {
-      setotherLanguage('');
+      setotherLanguage("");
       setIsLangChecked(!IsLangChecked);
       return;
-    }
-    else {
+    } else {
       setIsLangChecked(!IsLangChecked);
     }
     console.log("is other checked?", IsLangChecked);
@@ -616,7 +615,7 @@ function TutorSubjects(props) {
       French: French,
       Vietnamese: Vietnamese,
       Hmong: Hmong,
-      otherLanguage: otherLanguage
+      otherLanguage: otherLanguage,
     };
 
     let gradesErrors = false;
@@ -1198,7 +1197,6 @@ function TutorSubjects(props) {
                 id="Language: Chinese"
                 name="Language: Chinese"
                 onChange={(event) => changeLanguageChinese()}
-
                 checked={LanguageChinese}
               />
               <Form.Check.Label
@@ -1590,7 +1588,6 @@ function TutorSubjects(props) {
                 name="Spanish"
                 onChange={(event) => changeSpanish()}
                 checked={Spanish}
-
               />
               <Form.Check.Label
                 className="customCheckAndRadioOptions"
@@ -1739,7 +1736,6 @@ function TutorSubjects(props) {
                     type="OtherLanguage"
                     placeholder="Other Language"
                     defaultValue={otherLanguage}
-
                   />
                 </FloatingLabel>
               </fieldset>
