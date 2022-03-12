@@ -6,22 +6,24 @@ const cors = require("cors");
 const nodemailer = require("nodemailer");
 
 const { google } = require("googleapis");
-const OAuth2 = google.auth.OAuth2;
-const oauth2Client = new OAuth2(
-  process.env.OAUTH_CLIENT_ID,
-  process.env.OAUTH_CLIENT_SECRET,
-  "https://developers.google.com/oauthplayground"
-);
-
-oauth2Client.setCredentials({
-  refresh_token: process.env.OAUTH_REFRESH_TOKEN,
-});
-
-const accessToken = oauth2Client.getAccessToken();
 
 router.post("/", cors(), async (req, res) => {
   console.log("email post route hit");
   console.log(req.body.email);
+
+  const OAuth2 = google.auth.OAuth2;
+  const oauth2Client = new OAuth2(
+    process.env.OAUTH_CLIENT_ID,
+    process.env.OAUTH_CLIENT_SECRET,
+    "https://developers.google.com/oauthplayground"
+  );
+
+  oauth2Client.setCredentials({
+    refresh_token: process.env.OAUTH_REFRESH_TOKEN,
+  });
+
+  const accessToken = oauth2Client.getAccessToken();
+
   let email = req.body.email;
 
   let transporter = nodemailer.createTransport({
